@@ -1,5 +1,5 @@
 <?php
-date_default_timezone_set('PRC');
+date_default_timezone_set('America/Toronto');
 require dirname(__DIR__) . '/src/bootstrap.php';
 
 $di = new Xhgui_ServiceContainer();

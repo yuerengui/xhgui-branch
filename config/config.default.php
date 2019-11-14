@@ -3,13 +3,13 @@
  * Default configuration for Xhgui
  */
 return array(
-    'debug' => false,
+    'debug' => true,
     'mode' => 'development',
     /*
      * support extension: uprofiler, tideways_xhprof, tideways, xhprof
      * default: xhprof
      */
-    'extension' => 'xhprof',
+    'extension' => 'tideways',
 
     // Can be either mongodb or file.
     /*

@@ -155,7 +155,7 @@ register_shutdown_function(
             : null;
         if (empty($uri) && isset($_SERVER['argv'])) {
             $cmd = basename($_SERVER['argv'][0]);
-            $uri = $cmd . ' ' . implode(' ', array_slice($_SERVER['argv'], 1));
+            $uri = $cmd . ' ' . implode(' ', array_slice($_SERVER['argv'], 1)) . (!empty($_SERVER['JOB_NAME']) ? (' ' . $_SERVER['JOB_NAME']) : '');
         }
 
         $time = array_key_exists('REQUEST_TIME', $_SERVER)
